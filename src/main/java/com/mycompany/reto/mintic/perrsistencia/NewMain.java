@@ -19,27 +19,18 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-            Vista vista= new Vista();
-        Producto p=new Producto(); 
-        Conect con=new Conect();
-        Cotroller c=new Cotroller(con,vista,p);
-         vista.setVisible(true);
-//          new Vista().setVisible(true);
-
-       //System.out.println(c.leer().toString());
-/*       for(Producto pro:c.leer()){
-        System.out.println(pro.toString());
-   
-       }
-  */ 
-
-//        System.out.println(c.leerID(0,"Jabón").getNombre());
+        // TODO code application logic here4
         
-        
+      Conect c =new Conect();
+      Producto p=new Producto();
+      Vista vista=new Vista();
+      
+      Cotroller control=new Cotroller(c,vista,p);
+      vista.setTitle("PROEJCT MINTIC CRUD");
+      vista.setVisible(true);
             
         
-       // Conect con =new Conect() ;
-    }
+      
+}
     
 }
